@@ -51,20 +51,6 @@ vercel.json                makes page refresh / deep links work on Vercel
 - **React Router** – pages, `NavLink`, `Navigate`, route guard `RequireAuth` (protects cart and admin)
 - **Controlled components** – every form input
 
-## Deploy: GitHub + Vercel
-1. Create an empty repository on https://github.com (e.g. `shoe-hub-react`).
-2. In this folder run:
-   ```bash
-   git init
-   git add .
-   git commit -m "Shoe Hub e-commerce React project"
-   git branch -M main
-   git remote add origin https://github.com/usman-max123/shoe-hub-react.git
-   git push -u origin main
-   ```
-3. Go to https://vercel.com → **Add New → Project** → import the GitHub repo.
-   Vercel detects Vite automatically (Build: `npm run build`, Output: `dist`). Click **Deploy**.
-4. Copy the live `https://….vercel.app` link and submit it with the GitHub link.
 
 ## Note about data
 Data is saved in each visitor's own browser (localStorage). Products or orders added by the admin
